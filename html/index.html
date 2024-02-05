@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/b8a9e78f6f.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="../src/output.css">
+</head>
+<body>
+
+
+<div class="nav">
+
+    <div class="icon">
+<i class="fas fa-bars" onclick="open_side_bar()"></i>
+</div>
+
+<div class="p1">
+<p >My food</p>
+</div>
+<div class="p2">
+<p >Mail</p></div>
+</div>
+
+<div class="sidebar" id="side_bar">
+<a href="" onclick="close_side_bar()" class="closing">Close Menu</a>
+<a href="#start" onclick="close_side_bar()">Food</a>
+<a href="#about" onclick="close_side_bar()">About</a>
+
+</div>
+
+<div class="first" id="start">
+    <div class="image">
+        <img src="../images/sandwich.jpg" alt="">
+        <h3>The Perfect Sandwich, A Real NYC Classic</h3><br>
+        <p>Just some random text. Lorem ipsum dolor,<br> sit amet consectetur adipisicing .</p>
+    </div>
+    <div class="image">
+        <img src="images/steak.jpg" alt="">
+        <h3>Let Me Tell You About This Steak</h3><br>
+        <p>Just some random text. Lorem ipsum dolor,<br> sit amet consectetur adipisicing .</p>
+    </div>
+    <div class="image">
+        <img src="images/cherries.jpg" alt="">
+        <h3>Cherries, interrupted</h3><br>
+        <p>Just some random text. Lorem ipsum dolor,<br> sit amet consectetur adipisicing .</p>
+    </div>
+    <div class="image">
+        <img src="images/wine.jpg" alt="">
+        <h3>Once Again, Robust Wine and Vegetable Pasta</h3><br>
+        <p>Just some random text. Lorem ipsum dolor,<br> sit amet consectetur adipisicing .</p>
+    </div>
+
+    <div class="image">
+        <img src="images/popsicle.jpg" alt="">
+        <h3>All I Need Is a Popsicle</h3><br>
+        <p class="new">Just some random text. Lorem ipsum dolor,<br> sit amet consectetur adipisicing .</p>
+    </div>
+    <div class="image">
+        <img src="images/salmon.jpg" alt="">
+        <h3>Salmon For Your Skin</h3><br>
+        <p>Just some random text. Lorem ipsum dolor,<br> sit amet consectetur adipisicing .</p>
+    </div>
+    <div class="image">
+        <img src="images/sandwich.jpg" alt="">
+        <h3>The Perfect Sandwich, A Real Classic</h3><br>
+        <p>Just some random text. Lorem ipsum dolor,<br> sit amet consectetur adipisicing .</p>
+    </div>
+    <div class="image">
+        <img src="images//croissant.jpg" alt="">
+        <h3>Le French</h3><br>
+        <p>Just some random text. Lorem ipsum dolor,<br> sit amet consectetur adipisicing .</p>
+    </div>
+</div>
+
+<div class="pages">
+    <div class="numbers">
+<a href="#start" class="other">&lt;&lt; </a>
+
+<a href="#start" class="unique">1</a> 
+
+<a href="#start" class="other">2</a> 
+
+<a href="#start" class="other">3 </a>
+
+<a href="#start" class="other">4 </a>
+
+<a href="#start" class="other">&gt;&gt;</a>
+
+    </div>
+</div>
+<br><br><br>
+<hr>
+
+<div class="about" id="about">
+    <br><h2>About Me, The Food Man</h2><br>
+    <img src="images/chef.jpg" alt=""><br>
+    <h3>I am Who I am!</h3>
+    <h4><em>With passin For real, Good Food</em></h4></h4>
+    <p>Just me, myself and I, exploring the universe of unknownment. I have a heart of love and an interest of lorem ipsum and mauris neque quam blog. I want to share my world with you. Praesent tincidunt sed tellus ut rutrum. Sed vitae justo condimentum, porta lectus vitae, ultricies congue gravida diam non fringilla. Praesent tincidunt sed tellus ut rutrum. Sed vitae justo condimentum, porta lectus vitae, ultricies congue gravida diam non fringilla.</p>
+</div>
+<br><br><br><br>
+<hr>
+<br>
+<script>
+function open_side_bar(){
+    document.getElementById("side_bar").style.width = "300px";
+}
+
+function close_side_bar(){
+    document.getElementById("side_bar").style.width = "0";
+}
+
+</script>
+
+</body>
+
+<footer>
+    <div class="footer" id="footer">
+    <div class="FOOTE">
+        <h2>FOOTER</h2>
+        <br><br>
+        <p>Praesent tincidunt sed tellus ut rutrum. Sed vitae justo condimentum, <br>porta lectus vitae, ultricies congue gravida diam non fringilla.
+            <br><br>
+            Powered by <a href="https://www.w3schools.com">w3.css</a>
+        </p>
+
+    </div>
+
+    <div class="BLOG">
+        <h2>BLOG POSTS</h2>
+        <br><br>
+        <img src="images/workshop.jpg" alt="" class="b1">
+        <p>Lorem <br>Sed mattis nunc</p>
+        <br>
+        <hr>
+        <br>
+        <img src="images/gondol.jpg" alt="" class="b2">
+        <p>Ipsum
+            <br>Praes tinci sed</p>
+    </div>
+
+    <div class="TAGS">
+        <h2>POPULAR TAGS</h2><br><br>
+        <div class="p">
+            <p style="background-color: black;">Travel</p>&nbsp; <p>NewYork</p> &nbsp;<p>Dinner</p>&nbsp; <p>Salmon</p> &nbsp;<p>France</p> &nbsp;<p>Drinks</p> &nbsp;
+        </div>
+            <div class="p">
+         <p>Ideas</p>&nbsp; <p>Flavors</p> &nbsp;<p>Cuisine</p>&nbsp; <p>Chicken</p> &nbsp;<p>Dressing</p> &nbsp;<p>Fried</p> &nbsp;<p>Fish</p>&nbsp;</div>
+
+         <div class="p"> <p>Duck</p></div>
+
+    </div>
+</div>
+</footer>
+
+
+
+</html>
