@@ -1,9 +1,15 @@
+const task_list= []
+function addtask(task){
+    return task_list.push(task)
+}
 
-// function _task_list(name,mark){
-//     // const task_list= []
-//     // const new_task = task_list.push(name,mark)
-//     return new_task
-// }
-const task_list= ['front_end']
-const new_task = task_list.push('back_end')
+addtask('web_design')
 console.log(task_list)
+// const remove_task = task_list.pop()
+
+function removetask(){
+    const remove_task = task_list.pop()
+    return task_list
+}
+
+// console.log(removetask())
