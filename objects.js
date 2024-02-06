@@ -4,12 +4,24 @@ function addtask(task){
 }
 
 addtask('web_design')
-console.log(task_list)
+addtask('web_app')
+addtask('pyhton')
+addtask('java')
+addtask('c')
+addtask('c++')
+
+console.log('Added Task \n----------------\n'+task_list)
+
+// console.log(task_list)
 // const remove_task = task_list.pop()
 
 function removetask(){
-    const remove_task = task_list.pop()
-    return task_list
+    return task_list.splice(1,2)
 }
+console.log('Completed Task \n----------------\n'+removetask())
 
-// console.log(removetask())
+ function sorting(){
+    return task_list.toSorted()
+ }
+//  sorting()
+ console.log('Sorted Task \n----------------\n'+sorting())
