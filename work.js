@@ -43,23 +43,22 @@ const items = [
 ];
 
 // 1. Filter and show the product that will be bought when you don't have much money (Cheap one)
-const minPrice = items[2].price;
-const result1 = items.filter((element) => element.price <= minPrice)
-console.log(result1)
+const _cheap = items.filter((element) => element.price <= 100)
+console.log(_cheap)
 
 // 2. Filter and show the product that will be expensive in the array
-const maxPrice = items[4].price
-const result2 = items.filter((element) => element.price > maxPrice)
+const _expensive = items.filter((element) => element.price > 500)
 console.log(result2)
 
 // 3. Calculate the full price of all products combined
-const result3 = items.reduce((a,b) => { return a + b.price}, 0)
-console.log(result3)
+const _summation = items.reduce((a,b) => { return a + b.price}, 0)
+console.log(_summation)
 
 // 4. Calculate the full price of all products combined and remove products that are under $10
-const result4 = items.filter((element) => element.price >=10).reduce((a,b) => a + b.price, 0)
-console.log(result4)
+const _greater = items.filter((element) => element.price >=10)
+const sum_grteater = _greater.reduce((a,b) => a + b.price, 0)
+console.log(_greater)
 
 // 5. Filter and show the product that will be start with letter b at first postion
-const result5 = items.filter((element) => element.name.charAt(0) === 'B')
-console.log(result5)
+const _first_position = items.filter((element) => element.name.charAt(0).toLocaleLowerCase == 'b')
+console.log(_first_position)
