@@ -23,7 +23,7 @@ console.log(_find)
 // Apply the slice() method to create a new array selectedColors containing the elements from index 1 to index 3 (inclusive) from the colors array.
 const new_color = colors.slice(1,4)
 const new_array = []
-const _push = new_array.push(_string)
+const _push = new_array.push(new_color)
 console.log(_push)
 console.log(new_array)
 
@@ -48,7 +48,7 @@ console.log(_cheap)
 
 // 2. Filter and show the product that will be expensive in the array
 const _expensive = items.filter((element) => element.price > 500)
-console.log(result2)
+console.log(_expensive)
 
 // 3. Calculate the full price of all products combined
 const _summation = items.reduce((a,b) => { return a + b.price}, 0)
