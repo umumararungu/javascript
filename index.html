@@ -6,6 +6,29 @@
     <script src="https://kit.fontawesome.com/b8a9e78f6f.js" crossorigin="anonymous"></script>
     <!-- <link rel="stylesheet" href="../src/output.css"> -->
     <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+          theme: {
+            extend: {
+              colors: {
+                clifford: '#da373d',
+              }
+            },
+            screens:{
+                'mob1': {'max': '425px'},
+                'md':{'min': '767px'},
+                'lg':{'min': '992px'},
+
+            },
+            zIndex:{
+                'z-one': '-1',
+            },
+            flexBasis:{
+                'new':'24%'
+    },
+          }
+        }
+      </script>
     <link rel="icon" href="../images/free-globe-396-433260.webp" type="image/x-icon/webp"/>
 </head>
 <body>
@@ -14,8 +37,8 @@
         <div class="text-blue-400 basis-1/2">
             <img src="./images/unnamed.png" alt="" class="h-24 w-24">
         </div>
-        <div class="basis-1/2 py-4 sm:basis-1/3 sm:py-5 s" id="add" >
-            <a href="./html/addtodo.html" class="bg-orange-500 px-12 py-3 sm:px-8 sm:basis-1/5 sm   :py-2 rounded float-right "><span class="text-xl font-black">+</span> <span class="text-white font-black text-sm">Add todo</span></a>
+        <div class="basis-1/2 py-4 mob1:basis-1/3 mob1:py-5 s" id="add" >
+            <a href="./html/addtodo.html" class="bg-orange-500 px-12 py-3 mob1:px-8 mob1:basis-1/5 mob1   :py-2 rounded float-right "><span class="text-xl font-black">+</span> <span class="text-white font-black text-mob1">Add todo</span></a>
         </div>
     </div>
 
